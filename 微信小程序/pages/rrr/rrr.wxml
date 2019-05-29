@@ -1,0 +1,12 @@
+<!--pages/rrr/rrr.wxml-->
+<!--轮播图组件-->
+<text>{{mag}}</text>
+<view>
+  <swiper>
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image mode="scaleToFill" src="{{item}}" class="slide-image" />
+    </swiper-item>
+  </block>
+</swiper>
+</view>

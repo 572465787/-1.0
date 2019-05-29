@@ -1,0 +1,9 @@
+/* pages/animate/animate.wxss */
+.anmitabox{
+  width:200rpx;
+  height: 200rpx;
+  background: blue;
+  position: relative;
+  top: 30px;
+  left: 60px;
+}

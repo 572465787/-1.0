@@ -1,0 +1,23 @@
+<!--logs.wxml-->
+<view class="container log-list">
+<!-- 列表渲染 -->
+<!-- view盒子容器 -->
+<!-- wx:key 静态遍历不需要 -->
+    <view wx:for="{{list}}">
+        {{item}}
+      <!-- 针对循环自动每一项自动赋值叫做item  可以通过wx：for-item="a" 改变item-->
+    </view>
+
+  {{msg}}
+    <text class='a'>123</text>
+    <text wx:if="!{{flag}}">
+        显示内容{{msg}}
+    </text>
+    <text>
+    {{flag?'显示true':'显示false'}}
+    </text>
+    <text hidden='!{{flag}}'>
+      显示 hidden内容
+    </text>
+
+</view>
